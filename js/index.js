@@ -45,9 +45,32 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-
-const cta = document.getElementById('cta-img');
+// The images
+let cta = document.getElementById('cta-img');
 cta.src = siteContent['cta']['img-src']
 
-const middleimg = document.getElementById('middle-img');
+let middleimg = document.getElementById('middle-img');
 middleimg.src = siteContent['main-content']['middle-img-src']
+
+
+//Content
+let refLinks = document.querySelectorAll('a');
+refLinks[0].textContent = siteContent['nav']['nav-item-1']
+refLinks[1].textContent = siteContent['nav']['nav-item-2']
+refLinks[2].textContent = siteContent['nav']['nav-item-3']
+refLinks[3].textContent = siteContent['nav']['nav-item-4']
+refLinks[4].textContent = siteContent['nav']['nav-item-5']
+refLinks[5].textContent = siteContent['nav']['nav-item-6']
+
+//Headers
+let awesomeDom = document.getElementById('h1');
+awesomeDom.textContext = siteContent['cta']['h1']
+
+let h4Headers = document.querySelectorAll('h4');
+h4Headers[0].textContent = siteContent['main-content']['features-h4']
+h4Headers[1].textContent = siteContent['main-content']['about-h4']
+h4Headers[2].textContent = siteContent['main-content']['services-h4']
+h4Headers[3].textContent = siteContent['main-content']['about-content']
+h4Headers[4].textContent = siteContent['main-content']['product-h4']
+h4Headers[5].textContent = siteContent['main-content']['contact-h4']
+
