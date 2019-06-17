@@ -49,8 +49,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 let cta = document.getElementById('cta-img');
 cta.src = siteContent['cta']['img-src']
 
-let middleimg = document.getElementById('middle-img');
-middleimg.src = siteContent['main-content']['middle-img-src']
+let middlePic = document.getElementById('middle-img');
+middlePic.src = siteContent['main-content']['middle-img-src']
 
 
 //Content
@@ -61,16 +61,35 @@ refLinks[2].textContent = siteContent['nav']['nav-item-3']
 refLinks[3].textContent = siteContent['nav']['nav-item-4']
 refLinks[4].textContent = siteContent['nav']['nav-item-5']
 refLinks[5].textContent = siteContent['nav']['nav-item-6']
+refLinks[0].style.color = 'green';
+refLinks[1].style.color = 'green';
+refLinks[2].style.color = 'green';
+refLinks[3].style.color = 'green';
+refLinks[4].style.color = 'green';
+refLinks[5].style.color = 'green';
 
 //Headers
 let awesomeDom = document.getElementById('h1');
 awesomeDom.textContext = siteContent['cta']['h1']
 
+
+//Button
+let startButton = document.getElementById('button');
+startButton.textContent = siteContent['cta']['button']
+
 let h4Headers = document.querySelectorAll('h4');
 h4Headers[0].textContent = siteContent['main-content']['features-h4']
 h4Headers[1].textContent = siteContent['main-content']['about-h4']
 h4Headers[2].textContent = siteContent['main-content']['services-h4']
-h4Headers[3].textContent = siteContent['main-content']['about-content']
-h4Headers[4].textContent = siteContent['main-content']['product-h4']
-h4Headers[5].textContent = siteContent['main-content']['contact-h4']
+h4Headers[3].textContent = siteContent['main-content']['product-h4']
+h4Headers[4].textContent = siteContent['main-content']['vision-h4']
+h4Headers[5].textContent = siteContent['contact']['contact-h4']
+
+//Content
+let mainContent = document.querySelectorAll('content');
+mainContent[0].textContent = siteContent['main-content']['features-content']
+mainContent[1].textContent = siteContent['main-content']['about-content']
+mainContent[2].textContent = siteContent['main-content']['services-content']
+mainContent[3].textContent = siteContent['main-content']['product-content']
+mainContent[4].textContent = siteContent['main-content']['vision-content']
 
