@@ -42,8 +42,8 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let links = document.querySelectorAll("nav a");
-console.log(links);
-links.innerHTML = siteContent['nav']['nav-item-1'];
+//console.log(links);
+links[0].innerHTML = siteContent['nav']['nav-item-1'];
 links[1].innerHTML = siteContent['nav']['nav-item-2'];
 links[2].innerHTML = siteContent['nav']['nav-item-3'];
 links[3].innerHTML = siteContent['nav']['nav-item-4'];
@@ -58,4 +58,16 @@ let ctaButton = document.querySelector('button');
 ctaButton.innerHTML = siteContent['cta']['button'];
 
 let logo2 = document.getElementById("cta-img");
-logo2
+logo2.setAttribute('src', siteContent['cta']['img-src']);
+
+let mainContent = document.querySelectorAll(".main-content");
+console.log(mainContent);
+mainContent[0].getElementsByTagName("h4")[0].innerHTML = siteContent['main-content']['features-h4'];
+mainContent[0].getElementsByTagName("p")[0].innerHTML = siteContent['main-content']['features-content'];
+mainContent[1].getElementsByTagName("h4.about-h4")[0].innerHTML = siteContent['main-content']['about-h4'];
+mainContent[1].getElementsByTagName("p")[0].innerHTML = siteContent['main-content']['about-content'];
+//mainContent[0].innerHTML = siteContent['main-content']['features-h4'];
+//mainContent[0].innerHTML = siteContent['main-content']['features-content'];
+
+let logo3 = document.getElementById("middle-img");
+logo3.setAttribute('src', siteContent['main-content']['middle-img-src']);
