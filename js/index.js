@@ -81,7 +81,7 @@ mainContent[1].getElementsByTagName("h4")[0].innerHTML = siteContent['main-conte
 mainContent[1].getElementsByTagName("p")[0].innerHTML = siteContent['main-content']['about-content'];
 
 mainContent[2].getElementsByTagName("h4")[0].innerHTML = siteContent['main-content']['services-h4'];
-mainContent[2].getElementsByTagName("p")[0].innerHTML = siteContent['main-content'];['services-content'];
+mainContent[2].getElementsByTagName("p")[0].innerHTML = siteContent['main-content']['services-content'];
 
 mainContent[3].getElementsByTagName("h4")[0].innerHTML = siteContent['main-content']['product-h4'];
 mainContent[3].getElementsByTagName("p")[0].innerHTML = siteContent['main-content']['product-content'];
