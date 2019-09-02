@@ -6,6 +6,7 @@ const siteContent = {
     "nav-item-4": "Features",
     "nav-item-5": "About",
     "nav-item-6": "Contact",
+    
     "img-src": "img/logo.png"
   },
   "cta": {
@@ -49,6 +50,7 @@ links[2].innerHTML = siteContent['nav']['nav-item-3'];
 links[3].innerHTML = siteContent['nav']['nav-item-4'];
 links[4].innerHTML = siteContent['nav']['nav-item-5'];
 links[5].innerHTML = siteContent['nav']['nav-item-6'];
+
 
 
 
@@ -99,11 +101,22 @@ contactsList[0].getElementsByTagName("p")[0].innerHTML = siteContent["contact"][
 contactsList[0].getElementsByTagName("p")[1].innerHTML = siteContent["contact"]["phone"];
 contactsList[0].getElementsByTagName("p")[2].innerHTML = siteContent["contact"]["email"];
 
+
+// Task 3 adding two new items to nav bar using .appendChild and .prepend
 let newLink = document.createElement("a");
 newLink.textContent = 'Forum';
-linksTwo = document.querySelector("a")
+linksTwo = document.querySelector("nav a")
 
 linksTwo.appendChild(newLink);
+newLink.style.color = "red";
+newLink.style.marginLeft = "19px";
+
+let newerLink = document.createElement("a")
+newerLink.textContent = "Interviews";
+linksTwo.prepend(newerLink);
+newerLink.style.color = "red";
+newerLink.style.marginRight = "19px";
+
 
 let footer = document.querySelector("footer");
 footer.innerHTML = siteContent['footer']['copyright'];
